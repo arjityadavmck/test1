@@ -1,0 +1,48 @@
+Test ID,Title,Steps,Expected Result,Priority,Quality Score
+TC-001,Successful flight search,"1. Navigate to flight search page
+2. Enter departure and arrival locations
+3. Select travel dates
+4. Click on search button",List of available flights is displayed with costs,High,8.4/10
+TC-002,Flight search with no results,"1. Navigate to flight search page
+2. Enter invalid departure and arrival locations
+3. Select travel dates
+4. Click on search button",No flights found message is displayed,High,8.5/10
+TC-003,Select a seat successfully,"1. Search for flights
+2. Select a flight
+3. Choose a preferred seat from available options
+4. Click on continue",Seat selection is confirmed and proceeds to payment,High,8.2/10
+TC-004,Payment processing with valid credit card,"1. Search for flights
+2. Select a flight
+3. Choose a seat
+4. Enter valid credit card details
+5. Click on pay button",Payment is processed successfully and confirmation email is sent,High,8.9/10
+TC-005,Payment processing with invalid card details,"1. Search for flights
+2. Select a flight
+3. Choose a seat
+4. Enter invalid credit card details
+5. Click on pay button",Error message indicating invalid card details is displayed,High,8.5/10
+TC-006,Payment processing with insufficient funds,"1. Search for flights
+2. Select a flight
+3. Choose a seat
+4. Enter credit card with insufficient funds
+5. Click on pay button",Error message indicating insufficient funds is displayed,High,8.5/10
+TC-007,Booking confirmation email received,"1. Search for flights
+2. Select a flight
+3. Choose a seat
+4. Enter valid payment details
+5. Click on pay button
+6. Wait for 5 minutes",Confirmation email is received with booking details,High,8.4/10
+TC-008,Real-time seat availability check,"1. Search for flights
+2. Select a flight
+3. Choose a seat
+4. Refresh seat selection page",Seat availability is updated in real-time,Medium,7.6/10
+TC-009,Successful navigation to flight booking,"1. Open the application
+2. Navigate to flight booking section",User is successfully navigated to the flight booking section,Medium,7.5/10
+TC-010,System startup and basic navigation,"1. Open the application
+2. Check if the homepage loads
+3. Navigate to flight search page",Homepage loads successfully and user can navigate to flight search page,High,8.2/10
+,,,,,
+--- METADATA ---,,,,,
+Generated On,2025-10-17 13:47:47,,,,
+Total Test Cases,10,,,,
+Overall Quality Score,8.2/10,,,,

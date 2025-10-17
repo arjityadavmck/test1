@@ -1,0 +1,12 @@
+# UI Application Requirements
+# Additional dependencies for the desktop GUI
+
+# Core dependencies (from existing requirements.txt)
+# Note: The main requirements.txt should already have these
+requests>=2.25.0
+langchain>=0.1.0
+langgraph>=0.0.40
+
+# GUI-specific dependencies
+# Tkinter is included with Python, but we might need these for enhanced features
+pillow>=8.0.0          # For image handling in UI

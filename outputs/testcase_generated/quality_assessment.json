@@ -1,0 +1,240 @@
+{
+  "overall_score": 8.2,
+  "individual_scores": [
+    {
+      "test_id": "TC-001",
+      "scores": {
+        "clarity": 9.0,
+        "completeness": 8.0,
+        "specificity": 8.0,
+        "testability": 9.0,
+        "coverage": 7.5
+      },
+      "total_score": 8.4,
+      "strengths": [
+        "Clear step descriptions",
+        "Specific expected results"
+      ],
+      "weaknesses": [
+        "Does not include edge cases for search criteria"
+      ],
+      "suggestions": [
+        "Add tests for different date formats",
+        "Include tests for various combinations of locations"
+      ]
+    },
+    {
+      "test_id": "TC-002",
+      "scores": {
+        "clarity": 9.0,
+        "completeness": 8.5,
+        "specificity": 8.0,
+        "testability": 9.0,
+        "coverage": 8.0
+      },
+      "total_score": 8.5,
+      "strengths": [
+        "Covers negative scenario effectively",
+        "Clear expected outcome"
+      ],
+      "weaknesses": [
+        "Could specify the exact message expected"
+      ],
+      "suggestions": [
+        "Define the exact error message expected for clarity"
+      ]
+    },
+    {
+      "test_id": "TC-003",
+      "scores": {
+        "clarity": 8.5,
+        "completeness": 8.0,
+        "specificity": 8.0,
+        "testability": 9.0,
+        "coverage": 7.5
+      },
+      "total_score": 8.2,
+      "strengths": [
+        "Logical flow of steps",
+        "Clear expected result"
+      ],
+      "weaknesses": [
+        "Does not test for seat availability scenarios"
+      ],
+      "suggestions": [
+        "Add tests for scenarios where no seats are available"
+      ]
+    },
+    {
+      "test_id": "TC-004",
+      "scores": {
+        "clarity": 9.0,
+        "completeness": 9.0,
+        "specificity": 9.0,
+        "testability": 9.0,
+        "coverage": 8.5
+      },
+      "total_score": 8.9,
+      "strengths": [
+        "Well-defined steps",
+        "Covers successful payment scenario thoroughly"
+      ],
+      "weaknesses": [
+        "Could include verification of payment confirmation"
+      ],
+      "suggestions": [
+        "Add a step to verify the payment confirmation message"
+      ]
+    },
+    {
+      "test_id": "TC-005",
+      "scores": {
+        "clarity": 9.0,
+        "completeness": 8.5,
+        "specificity": 8.0,
+        "testability": 9.0,
+        "coverage": 8.0
+      },
+      "total_score": 8.5,
+      "strengths": [
+        "Covers invalid input scenario well",
+        "Clear expected outcome"
+      ],
+      "weaknesses": [
+        "Could specify the exact error message expected"
+      ],
+      "suggestions": [
+        "Define the exact error message expected for clarity"
+      ]
+    },
+    {
+      "test_id": "TC-006",
+      "scores": {
+        "clarity": 9.0,
+        "completeness": 8.5,
+        "specificity": 8.0,
+        "testability": 9.0,
+        "coverage": 8.0
+      },
+      "total_score": 8.5,
+      "strengths": [
+        "Covers insufficient funds scenario",
+        "Clear expected outcome"
+      ],
+      "weaknesses": [
+        "Could specify the exact error message expected"
+      ],
+      "suggestions": [
+        "Define the exact error message expected for clarity"
+      ]
+    },
+    {
+      "test_id": "TC-007",
+      "scores": {
+        "clarity": 8.5,
+        "completeness": 8.0,
+        "specificity": 8.0,
+        "testability": 8.5,
+        "coverage": 8.0
+      },
+      "total_score": 8.4,
+      "strengths": [
+        "Covers confirmation email scenario",
+        "Clear expected outcome"
+      ],
+      "weaknesses": [
+        "Waiting for 5 minutes is not practical for testing"
+      ],
+      "suggestions": [
+        "Consider using a mock email service for testing"
+      ]
+    },
+    {
+      "test_id": "TC-008",
+      "scores": {
+        "clarity": 8.0,
+        "completeness": 7.5,
+        "specificity": 7.5,
+        "testability": 8.0,
+        "coverage": 7.0
+      },
+      "total_score": 7.6,
+      "strengths": [
+        "Tests real-time functionality",
+        "Logical flow"
+      ],
+      "weaknesses": [
+        "Lacks detail on expected behavior if no seats are available"
+      ],
+      "suggestions": [
+        "Add scenarios for when seats are not available"
+      ]
+    },
+    {
+      "test_id": "TC-009",
+      "scores": {
+        "clarity": 8.0,
+        "completeness": 7.0,
+        "specificity": 7.0,
+        "testability": 8.0,
+        "coverage": 6.5
+      },
+      "total_score": 7.5,
+      "strengths": [
+        "Basic navigation test is important",
+        "Clear expected outcome"
+      ],
+      "weaknesses": [
+        "Does not cover any edge cases or error scenarios"
+      ],
+      "suggestions": [
+        "Include tests for navigation errors or loading issues"
+      ]
+    },
+    {
+      "test_id": "TC-010",
+      "scores": {
+        "clarity": 8.5,
+        "completeness": 8.0,
+        "specificity": 8.0,
+        "testability": 9.0,
+        "coverage": 7.5
+      },
+      "total_score": 8.2,
+      "strengths": [
+        "Covers basic functionality",
+        "Clear expected outcome"
+      ],
+      "weaknesses": [
+        "Could include tests for homepage loading failures"
+      ],
+      "suggestions": [
+        "Add tests for scenarios where the homepage fails to load"
+      ]
+    }
+  ],
+  "quality_insights": {
+    "coverage_gaps": [
+      "Error handling scenarios",
+      "Performance edge cases"
+    ],
+    "missing_categories": [
+      "Security tests",
+      "Integration tests"
+    ],
+    "recommendations": [
+      "Add boundary value analysis",
+      "Include negative test scenarios"
+    ],
+    "strengths": [
+      "Good coverage of happy path scenarios",
+      "Clear and logical test steps"
+    ],
+    "overall_feedback": "The test cases cover the primary functionalities well but need to address edge cases, error handling, and performance scenarios for a more robust testing suite."
+  },
+  "metadata": {
+    "total_test_cases": 10,
+    "requirement_length": 1366,
+    "assessment_timestamp": "2025-10-12T10:30:00Z"
+  }
+}

@@ -1,0 +1,26 @@
+Test ID,Title,Steps,Expected Result,Priority,Quality Score
+TC-001,Download current slide,"1. Log in to the application
+2. Navigate to the slide document page
+3. Select a slide
+4. Click on 'Download Current Slide'",Slide file named 'Slide_X.pptx' is downloaded,High,N/A
+TC-002,Download full document,"1. Log in to the application
+2. Navigate to the slide document page
+3. Select a slide
+4. Click on 'Download Full Document'",Full document file is downloaded,High,N/A
+TC-003,Verify slide number in downloaded file,"1. Log in to the application
+2. Navigate to the slide document page
+3. Select a slide
+4. Click on 'Download Current Slide'
+5. Check the downloaded file name",Downloaded file name matches 'Slide_X.pptx' where X is the slide number,Medium,N/A
+TC-004,Check slide number accuracy,"1. Log in to the application
+2. Navigate to the slide document page
+3. Select a slide
+4. Download the full document
+5. Open the full document and locate the slide",Slide number corresponds to its position in the full document,Medium,N/A
+TC-005,Access control for document,"1. Log in to the application
+2. Navigate to the slide document page
+3. Attempt to download a slide without access",Access denied message is displayed,Low,N/A
+,,,,,
+--- METADATA ---,,,,,
+Generated On,2025-10-16 17:58:00,,,,
+Total Test Cases,5,,,,

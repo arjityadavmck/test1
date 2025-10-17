@@ -1,0 +1,11 @@
+TestID,Title,Steps,Expected,Priority
+TC-001,Successful flight search,Navigate to flight search page | Enter departure and arrival locations | Select travel dates | Click on search button,List of available flights is displayed with costs,High
+TC-002,Flight search with no results,Navigate to flight search page | Enter invalid departure and arrival locations | Select travel dates | Click on search button,No flights found message is displayed,High
+TC-003,Select a seat successfully,Search for flights | Select a flight | Choose a preferred seat from available options | Click on continue,Seat selection is confirmed and proceeds to payment,High
+TC-004,Payment processing with valid credit card,Search for flights | Select a flight | Choose a seat | Enter valid credit card details | Click on pay button,Payment is processed successfully and confirmation email is sent,High
+TC-005,Payment processing with invalid card details,Search for flights | Select a flight | Choose a seat | Enter invalid credit card details | Click on pay button,Error message indicating invalid card details is displayed,High
+TC-006,Payment processing with insufficient funds,Search for flights | Select a flight | Choose a seat | Enter credit card with insufficient funds | Click on pay button,Error message indicating insufficient funds is displayed,High
+TC-007,Booking confirmation email received,Search for flights | Select a flight | Choose a seat | Enter valid payment details | Click on pay button | Wait for 5 minutes,Confirmation email is received with booking details,High
+TC-008,Real-time seat availability check,Search for flights | Select a flight | Choose a seat | Refresh seat selection page,Seat availability is updated in real-time,Medium
+TC-009,Successful navigation to flight booking,Open the application | Navigate to flight booking section,User is successfully navigated to the flight booking section,Medium
+TC-010,System startup and basic navigation,Open the application | Check if the homepage loads | Navigate to flight search page,Homepage loads successfully and user can navigate to flight search page,High

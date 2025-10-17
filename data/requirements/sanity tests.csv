@@ -1,0 +1,35 @@
+Test ID,Title,Steps,Expected Result,Priority,Quality Score
+TC-001,Search flight by place and date,"1. Navigate to flight search page
+2. Enter departure and arrival locations
+3. Select departure date
+4. Click on 'Search Flights' button",List of available flights is displayed with costs,High,N/A
+TC-002,Select a flight and pick a seat,"1. Search for flights
+2. Select a flight from the list
+3. Choose a seat from the seat map
+4. Click on 'Continue' button",Seat selection is confirmed and proceeds to payment,High,N/A
+TC-003,Successful payment with card,"1. Select a flight and seat
+2. Enter valid card details
+3. Click on 'Pay Now' button",Payment is processed successfully and booking confirmation is displayed,High,N/A
+TC-004,Payment failure due to invalid card,"1. Select a flight and seat
+2. Enter invalid card details
+3. Click on 'Pay Now' button",Error message is displayed indicating payment failure,High,N/A
+TC-005,Retry payment after failure,"1. Select a flight and seat
+2. Enter invalid card details
+3. Click on 'Pay Now' button
+4. Enter valid card details
+5. Click on 'Pay Now' button",Payment is processed successfully after retry and booking confirmation is displayed,Medium,N/A
+TC-006,Email confirmation after successful booking,"1. Select a flight and seat
+2. Enter valid card details
+3. Click on 'Pay Now' button
+4. Check email inbox",Booking confirmation email is received,Medium,N/A
+TC-007,Search flight with no results,"1. Navigate to flight search page
+2. Enter invalid departure and arrival locations
+3. Select departure date
+4. Click on 'Search Flights' button",No flights found message is displayed,Medium,N/A
+TC-008,Check seat selection availability,"1. Search for flights
+2. Select a flight
+3. Check seat map for available seats",Available seats are displayed for selection,Medium,N/A
+,,,,,
+--- METADATA ---,,,,,
+Generated On,2025-10-17 12:48:08,,,,
+Total Test Cases,8,,,,

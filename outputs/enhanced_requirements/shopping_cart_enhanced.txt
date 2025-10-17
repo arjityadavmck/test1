@@ -1,0 +1,24 @@
+The e-commerce platform shall allow users to manage their shopping cart with the following functionalities:
+
+- **Add Items**: Users can add products to the cart from both the product listing page and the product detail page.
+- **View Cart**: The shopping cart shall display the following information for each product:
+  - Product Name
+  - Quantity
+  - Price
+- **Update Quantity**: Users can update the quantity of each product in the cart. The cart shall reflect the updated quantity and recalculate the total price accordingly.
+- **Remove Items**: Users can remove a product from the cart. Upon removal, the total price shall be updated immediately.
+- **Cart Persistence**: The shopping cart shall retain its contents even if the user logs out and logs back in.
+- **Proceed to Checkout**: A “Proceed to Checkout” button shall be enabled when the cart contains at least one item.
+
+**Acceptance Criteria**:
+1. Users can successfully add items from both the product listing and detail pages.
+2. The cart displays the correct product name, quantity, and price for each item.
+3. Users can update the quantity, and the total price updates accordingly.
+4. Users can remove items, and the total price updates immediately.
+5. The cart contents persist after logging out and logging back in.
+6. The “Proceed to Checkout” button is only enabled when there is at least one item in the cart.
+
+**Error Handling**:
+- If a user attempts to add an out-of-stock item, an error message shall be displayed: "This item is currently out of stock."
+- If a user tries to update the quantity to a number greater than available stock, an error message shall be displayed: "Cannot update quantity. Not enough stock available."
+- If a user tries to remove an item that is not in the cart, an error message shall be displayed: "Item not found in the cart."

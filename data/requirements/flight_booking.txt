@@ -1,0 +1,9 @@
+Requirement: system should do flight booking stuff
+
+Details:
+- user can search flight maybe by place and date or something
+- show some flights with cost
+- let user pick seat if they want
+- take money from card or wallet thing
+- if money not work then show error and let them try again maybe
+- send email after booking done successfully

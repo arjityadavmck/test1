@@ -1,0 +1,39 @@
+Test ID,Title,Steps,Expected Result,Priority,Quality Score
+TC-001,Successful flight search,"1. Open flight booking system
+2. Enter departure and arrival locations
+3. Select travel date
+4. Click on 'Search Flights'",List of available flights is displayed with costs,High,8.4/10
+TC-002,Select a flight and seat,"1. Search for flights
+2. Select a flight from the list
+3. Choose a seat from the available options
+4. Click on 'Continue'",Seat selection is confirmed and user is taken to payment page,High,8.5/10
+TC-003,Successful payment with card,"1. Select a flight and seat
+2. Enter valid card details
+3. Click on 'Pay Now'",Payment is processed successfully and booking confirmation is displayed,High,8.6/10
+TC-004,Successful payment with wallet,"1. Select a flight and seat
+2. Choose wallet as payment method
+3. Confirm payment",Payment is processed successfully and booking confirmation is displayed,High,8.6/10
+TC-005,Payment failure due to insufficient funds,"1. Select a flight and seat
+2. Enter card details with insufficient funds
+3. Click on 'Pay Now'","Error message is displayed indicating payment failure, user can retry",High,8.7/10
+TC-006,Email confirmation after successful booking,"1. Select a flight and seat
+2. Enter valid payment details
+3. Complete the payment",Confirmation email is sent to the user,High,8.4/10
+TC-007,Search flights with invalid date,"1. Open flight booking system
+2. Enter departure and arrival locations
+3. Select an invalid travel date
+4. Click on 'Search Flights'",Error message is displayed indicating invalid date,Medium,8.3/10
+TC-008,Search flights with no results,"1. Open flight booking system
+2. Enter valid locations
+3. Select dates with no available flights
+4. Click on 'Search Flights'",Message displayed indicating no flights found,Medium,8.3/10
+TC-009,System startup and navigation,"1. Open flight booking system
+2. Navigate to flight search page
+3. Check for presence of search fields",Flight search page loads successfully with all elements present,High,8.4/10
+TC-010,Select seat without flight selection,"1. Open flight booking system
+2. Navigate to seat selection page",Error message is displayed indicating no flight selected,Medium,8.4/10
+,,,,,
+--- METADATA ---,,,,,
+Generated On,2025-10-17 13:43:43,,,,
+Total Test Cases,10,,,,
+Overall Quality Score,8.0/10,,,,

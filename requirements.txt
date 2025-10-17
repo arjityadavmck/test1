@@ -1,0 +1,24 @@
+# Core LLM and agent dependencies
+langchain
+langchain-openai
+langchain-ollama
+langchain-core
+langgraph
+python-dotenv
+httpx
+requests
+
+# For TestRail, Jira, Slack integrations (API calls via requests)
+# No extra package needed unless you want official SDKs
+
+# For pandas (if you use CSV/dataframes)
+pandas
+
+# For Excel export functionality
+openpyxl
+
+# For running as a module
+# (no extra package needed)
+
+# For typing, pathlib, etc (standard library)
+# (no extra package needed)

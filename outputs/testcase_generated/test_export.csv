@@ -1,0 +1,4 @@
+TestID,Title,Steps,Expected,Priority
+TC-001,Login with valid credentials,Navigate to login page | Enter valid username | Enter valid password | Click login button,User is successfully logged in and redirected to dashboard,High
+TC-002,Login with invalid password,Navigate to login page | Enter valid username | Enter invalid password | Click login button,Error message 'Invalid credentials' is displayed,High
+TC-003,Password reset functionality,Click 'Forgot Password' link | Enter registered email | Click 'Send Reset Link' button | Check email inbox,Password reset email is sent to user,Medium

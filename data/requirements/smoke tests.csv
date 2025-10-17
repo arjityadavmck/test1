@@ -1,0 +1,35 @@
+Test ID,Title,Steps,Expected Result,Priority,Quality Score
+TC-001,Search for flights by place and date,"1. Navigate to flight search page
+2. Enter departure and arrival locations
+3. Select departure date
+4. Click on 'Search Flights' button",List of available flights is displayed,High,N/A
+TC-002,Display flight options with costs,"1. Perform flight search
+2. Verify that each flight option shows cost",All flight options display correct pricing information,High,N/A
+TC-003,Select a flight and pick a seat,"1. Search for flights
+2. Select a flight
+3. Choose a seat from the available options
+4. Click on 'Continue'",Seat selection is confirmed and user is taken to payment page,High,N/A
+TC-004,Complete payment with valid card,"1. Select a flight and seat
+2. Enter valid card details
+3. Click on 'Pay Now'",Payment is processed successfully and booking is confirmed,High,N/A
+TC-005,Handle payment failure,"1. Select a flight and seat
+2. Enter invalid card details
+3. Click on 'Pay Now'",Error message is displayed indicating payment failure,High,N/A
+TC-006,Retry payment after failure,"1. Select a flight and seat
+2. Enter invalid card details
+3. Click on 'Pay Now'
+4. Enter valid card details
+5. Click on 'Pay Now' again",Payment is processed successfully after retry,High,N/A
+TC-007,Send confirmation email after successful booking,"1. Complete payment with valid card
+2. Check email inbox",Confirmation email is received with booking details,High,N/A
+TC-008,System startup and navigation,"1. Open the flight booking application
+2. Navigate to the flight search page",Application loads successfully and user can access flight search,High,N/A
+TC-009,Check for no flights available,"1. Search for flights with non-existent locations or dates
+2. Click on 'Search Flights'",Message displayed indicating no flights available,Medium,N/A
+TC-010,Verify seat selection limits,"1. Select a flight
+2. Attempt to select more seats than available
+3. Click on 'Continue'",Error message displayed indicating seat limit exceeded,Medium,N/A
+,,,,,
+--- METADATA ---,,,,,
+Generated On,2025-10-17 12:46:47,,,,
+Total Test Cases,10,,,,

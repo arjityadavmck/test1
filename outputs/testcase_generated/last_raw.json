@@ -1,0 +1,72 @@
+[
+  {
+    "id": "TC-001",
+    "title": "Successful flight search",
+    "steps": ["Navigate to flight search page", "Enter departure and arrival locations", "Select travel dates", "Click on search button"],
+    "expected": "List of available flights is displayed with costs",
+    "priority": "High"
+  },
+  {
+    "id": "TC-002",
+    "title": "Flight search with no results",
+    "steps": ["Navigate to flight search page", "Enter invalid departure and arrival locations", "Select travel dates", "Click on search button"],
+    "expected": "No flights found message is displayed",
+    "priority": "High"
+  },
+  {
+    "id": "TC-003",
+    "title": "Select a seat successfully",
+    "steps": ["Search for flights", "Select a flight", "Choose a preferred seat from available options", "Click on continue"],
+    "expected": "Seat selection is confirmed and proceeds to payment",
+    "priority": "High"
+  },
+  {
+    "id": "TC-004",
+    "title": "Payment processing with valid credit card",
+    "steps": ["Search for flights", "Select a flight", "Choose a seat", "Enter valid credit card details", "Click on pay button"],
+    "expected": "Payment is processed successfully and confirmation email is sent",
+    "priority": "High"
+  },
+  {
+    "id": "TC-005",
+    "title": "Payment processing with invalid card details",
+    "steps": ["Search for flights", "Select a flight", "Choose a seat", "Enter invalid credit card details", "Click on pay button"],
+    "expected": "Error message indicating invalid card details is displayed",
+    "priority": "High"
+  },
+  {
+    "id": "TC-006",
+    "title": "Payment processing with insufficient funds",
+    "steps": ["Search for flights", "Select a flight", "Choose a seat", "Enter credit card with insufficient funds", "Click on pay button"],
+    "expected": "Error message indicating insufficient funds is displayed",
+    "priority": "High"
+  },
+  {
+    "id": "TC-007",
+    "title": "Booking confirmation email received",
+    "steps": ["Search for flights", "Select a flight", "Choose a seat", "Enter valid payment details", "Click on pay button", "Wait for 5 minutes"],
+    "expected": "Confirmation email is received with booking details",
+    "priority": "High"
+  },
+  {
+    "id": "TC-008",
+    "title": "Real-time seat availability check",
+    "steps": ["Search for flights", "Select a flight", "Choose a seat", "Refresh seat selection page"],
+    "expected": "Seat availability is updated in real-time",
+    "priority": "Medium"
+  },
+  {
+    "id": "TC-009",
+    "title": "Successful navigation to flight booking",
+    "steps": ["Open the application", "Navigate to flight booking section"],
+    "expected": "User is successfully navigated to the flight booking section",
+    "priority": "Medium"
+  },
+  {
+    "id": "TC-010",
+    "title": "System startup and basic navigation",
+    "steps": ["Open the application", "Check if the homepage loads", "Navigate to flight search page"],
+    "expected": "Homepage loads successfully and user can navigate to flight search page",
+    "priority": "High"
+  }
+]

@@ -1,0 +1,20 @@
+The system shall allow users to log in using their registered email and password. The following conditions and behaviors apply:
+
+- **Login Process**:
+  - Users must enter their registered email and password to log in.
+  - Upon successful login, users will be redirected to their dashboard.
+
+- **Error Handling**:
+  - If the password is entered incorrectly three times, the account will be locked for 10 minutes. During this lockout period, users will not be able to attempt to log in.
+  - Users will receive an error message stating 'Invalid email or password' for incorrect credentials.
+  - After the account lockout period, users will be able to attempt to log in again.
+
+- **Password Reset**:
+  - Users will have the option to reset their password via the 'Forgot Password' link. This link will direct users to a password reset page where they can enter their registered email to receive a password reset email.
+
+**Acceptance Criteria**:
+1. Users can successfully log in with valid credentials and are redirected to their dashboard.
+2. Users receive an appropriate error message for invalid credentials.
+3. After three failed login attempts, the account is locked for 10 minutes, and users are informed of the lockout.
+4. Users can initiate a password reset and receive a reset email within 5 minutes.
+5. The system must log all failed login attempts for security auditing purposes.

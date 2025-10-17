@@ -1,0 +1,76 @@
+{
+  "overall_score": 7.5,
+  "individual_scores": [
+    {
+      "test_id": "TC-001",
+      "scores": {
+        "clarity": 8.5,
+        "completeness": 7.0,
+        "specificity": 8.0,
+        "testability": 9.0,
+        "coverage": 7.5
+      },
+      "total_score": 8.0,
+      "strengths": [
+        "Clear step descriptions",
+        "Specific expected results"
+      ],
+      "weaknesses": [
+        "Lacks negative test scenarios",
+        "Does not cover account lockout feature"
+      ],
+      "suggestions": [
+        "Add tests for incorrect password attempts leading to account lockout",
+        "Include a test for successful password reset via 'Forgot Password' link"
+      ]
+    },
+    {
+      "test_id": "TC-002",
+      "scores": {
+        "clarity": 8.0,
+        "completeness": 6.5,
+        "specificity": 7.0,
+        "testability": 8.5,
+        "coverage": 6.0
+      },
+      "total_score": 7.4,
+      "strengths": [
+        "Steps are easy to follow",
+        "Identifies invalid password scenario"
+      ],
+      "weaknesses": [
+        "Expected result is vague",
+        "Does not specify the error message content",
+        "Missing account lockout scenario after multiple failed attempts"
+      ],
+      "suggestions": [
+        "Specify the expected error message in detail",
+        "Add a test case for multiple failed login attempts leading to account lockout"
+      ]
+    }
+  ],
+  "quality_insights": {
+    "coverage_gaps": [
+      "Account lockout after 3 failed attempts",
+      "Password reset functionality"
+    ],
+    "missing_categories": [
+      "Security tests",
+      "Integration tests"
+    ],
+    "recommendations": [
+      "Add tests for the 'Forgot Password' functionality",
+      "Include tests for account lockout scenarios"
+    ],
+    "strengths": [
+      "Good coverage of valid and invalid login scenarios",
+      "Clear and actionable test steps"
+    ],
+    "overall_feedback": "The test cases cover basic login functionality but lack comprehensive coverage for error handling, account lockout, and password reset scenarios. Enhancing these areas will improve the overall quality of the test suite."
+  },
+  "metadata": {
+    "total_test_cases": 2,
+    "requirement_length": 475,
+    "assessment_timestamp": "2025-10-12T10:30:00Z"
+  }
+}
